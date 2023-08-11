@@ -1,0 +1,17 @@
+p{
+    background-color: lightsteelblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+a{
+   float: right;
+   margin-right: 50px;
+}
+
+div
+{
+    clear: both;
+}
+h1{
+    margin: 50px;
+}

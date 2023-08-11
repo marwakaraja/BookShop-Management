@@ -1,0 +1,24 @@
+<div class="container" style="width: 50%; ">
+
+<form [formGroup]="frm" (ngSubmit)="onPost()">
+  <h2 style="background-color: greenyellow; text-align: center; margin: 10px;"> Add Lecture</h2>
+    <div class="form-group">
+      <label for="lectureName">Lecture Name :</label>
+      <input type="text" class="form-control" formGroupName="lectureName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Lecture Name">
+       
+    </div>
+
+    <div class="form-group">
+        <label for="LectureFileName">File Name :</label>
+        <input type="text" class="form-control" formGroupName="LectureFileName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter File Name">
+  
+      </div>
+
+    <div class="form-group">
+      <label for="LectureFile">File Lecture :</label>
+      <input type="file" (change)="onChange($event)" formControlName="LectureFile" class="form-control" id="exampleInputPassword1" placeholder="File pdf ">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>

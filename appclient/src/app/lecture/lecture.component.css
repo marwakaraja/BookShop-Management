@@ -1,0 +1,28 @@
+.card{
+    
+    margin: 20px;
+    border: solid 2px red;
+    float:left;
+}
+#pagination{
+    clear: both;
+margin-left: 500px;
+}
+
+.addbutton{
+    margin: 50px;
+}
+a{
+    
+    float:right;
+}
+h6{
+    color: blue;
+    margin: 10px;
+
+}
+
+img{
+    margin: 10px;
+}
+

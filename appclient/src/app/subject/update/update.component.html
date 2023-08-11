@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Update category</h1>
+  
+    <a href="#" routerLink="/welcome/subject" class="btn btn-primary">Back</a>
+        
+    <form [formGroup]="form" (ngSubmit)="submit()">
+  
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input 
+                formControlName="SubjectName"
+                id="title" 
+                type="text" 
+                
+                class="form-control">
+            
+           
+        </div>
+         
+        <div class="form-group">
+            <label for="body">Description</label>
+            <textarea 
+                formControlName="SubjectDescription"
+                id="body" 
+                type="text" 
+                
+                class="form-control">
+            </textarea>
+            
+            
+        </div>
+        
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Update</button>
+    </form>
+</div>

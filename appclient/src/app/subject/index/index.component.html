@@ -1,0 +1,35 @@
+<div class="container">
+
+  
+  
+    <a style="margin: 50px;" [routerLink]="['createSubject']" class="btn btn-success">Create New Category</a>
+    
+    <table class="table table-bordered">
+      <tr>
+        
+        <th>Category Name</th>
+        
+        <th width="220px">Actions 1</th>
+        <th width="220px">Actions 2</th>
+      </tr>
+      <tr *ngFor="let subject of subjects">
+        
+        <td>{{ subject.subjectName}}</td>
+        
+        <td>
+          <a  [routerLink]="['view', subject.subjectId]" class="btn btn-info">View</a>
+          <a  [routerLink]="['edit', subject.subjectId]" class="btn  btn-info">Edit</a>
+          <button type="button" (click)="deletesubject(subject.subjectId)" class="btn  btn-info">Delete</button>
+        </td>
+        <td>
+            <a  [routerLink]="[ subject.subjectId, 'lectures']" class="btn  btn-info">View Articles</a>
+
+        </td>
+      </tr>
+    </table>
+    <div>
+      <a style="float: right;" href="#" routerLink="/welcome" class="btn btn-primary">Back</a>
+  
+    </div>
+  
+ </div>

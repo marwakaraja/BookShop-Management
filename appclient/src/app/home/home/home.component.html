@@ -1,0 +1,22 @@
+
+
+<div style="margin:20px; ">
+    <a  style="width: 200px;" href="#" routerLink="/welcome" class="btn btn-primary">Back</a>
+
+  </div>
+<div *ngFor=" let Lecture of AllLectures ">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h6 >{{Lecture.lectureName}}</h6>
+
+          
+          <img src="assets/images/pdficon.png" alt="pdficon">
+         
+        
+        </div>
+
+      </div>
+
+</div>
+
+

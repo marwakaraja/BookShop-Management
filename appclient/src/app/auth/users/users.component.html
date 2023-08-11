@@ -1,0 +1,41 @@
+
+<div class="card">
+    <div class="card-header">
+        <h1 style="text-align: center;">{{title}}</h1>
+    </div>
+    <div class="card-body">
+<div class="container">
+
+  
+  
+    
+    <table class="table table-bordered ">
+      <tr id="head">
+       
+        <th>userId</th>
+        <th>UserName</th>
+        <th>Password</th>
+        
+        <th >Email</th>
+        <th >Mobile Phone</th>
+      </tr>
+      <tr *ngFor="let user of users">
+       
+        
+        <td>{{ user.userId}}</td>
+
+        <td>{{ user.userName}}</td>
+        <td>{{ user.password}}</td>
+        <td>{{ user.email}}</td>
+        <td>{{ user.phone}}</td>
+        
+       
+      </tr>
+    </table>
+    <div>
+  
+    </div>
+
+ </div>
+ <a style="float: right;" href="#" routerLink="/welcome" class="btn btn-primary">Back</a>
+

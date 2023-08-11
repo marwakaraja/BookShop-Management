@@ -1,0 +1,24 @@
+<div class="addbutton" >
+    <a   [routerLink]="['addLecture']" class="btn btn-success">Add New Book</a>
+</div>
+
+<div *ngFor=" let Lecture of lectures | paginate: { itemsPerPage: 2, currentPage: p, totalItems: total}">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h6 >{{Lecture.lectureName}}</h6>
+
+          
+          <img src="assets/images/pdficon.png" alt="pdficon">
+          <button class="btn btn-primary" (click)="download(Lecture.LectureFileName)">DOWNLOAD</button>
+          <button style="margin-left: 20px;" class="btn btn-danger" (click)="deleteBook(Lecture.lectureId)">DELETE</button>
+
+        
+        </div>
+
+      </div>
+
+</div>
+<div id="pagination">
+  <pagination-controls (pageChange)="pageChangeEvent($event)"></pagination-controls>
+
+</div>

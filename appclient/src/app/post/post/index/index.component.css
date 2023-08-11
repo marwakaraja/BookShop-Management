@@ -1,0 +1,33 @@
+.search 
+{ width: 500px;
+    margin-left: 300px;
+    color: blue; margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+button{
+    margin-left: 5px;
+}
+#search{
+    color: blue;
+    font-size: larger;
+    margin-right: 5px;
+}
+#linkadd{
+    float: right;
+    margin-bottom: 50PX;
+}
+input{
+    width: 400px;
+    border: solid 3px blue;
+}
+
+#searchLabel{
+    color: white;
+    background-color: #002fff;
+    font-size: x-large;
+    padding: 1px;
+    
+
+}

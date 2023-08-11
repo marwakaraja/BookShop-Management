@@ -1,0 +1,12 @@
+tr :hover{
+    background-color: aquamarine;
+}
+
+tr{
+    padding: 20px;
+}
+
+#head{
+    background-color: bisque;
+    position: sticky;
+}
