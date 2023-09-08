@@ -4,6 +4,7 @@ import { WelcomepageComponent } from './welcomepage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { guardGuard } from '../guard.guard';
 
 
 
